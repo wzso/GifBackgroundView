@@ -10,16 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // override
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        loadHTML()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func loadHTML() {
+        let path = Bundle.main.path(forResource: "background", ofType: "html")
+        let url = URL(fileURLWithPath: path!)
+        let data = try? Data(contentsOf: url)
+        print(path!)
+        webView.load(data!, mimeType: "text/html", textEncodingName: "utf-8", baseURL: url.deletingLastPathComponent())
     }
-
-
+    
+    @IBOutlet weak var webView: UIWebView!
 }
 
