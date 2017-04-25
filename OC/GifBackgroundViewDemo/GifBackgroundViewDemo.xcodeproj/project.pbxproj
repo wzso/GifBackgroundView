@@ -13,6 +13,8 @@
 		BF3CB2351EAEEF5D00697E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3CB2331EAEEF5D00697E30 /* Main.storyboard */; };
 		BF3CB2371EAEEF5D00697E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3CB2361EAEEF5D00697E30 /* Assets.xcassets */; };
 		BF3CB23A1EAEEF5D00697E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3CB2381EAEEF5D00697E30 /* LaunchScreen.storyboard */; };
+		BFC476B11EAEF4AC00626A15 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = BFC476AF1EAEF4AC00626A15 /* background.html */; };
+		BFC476B21EAEF4AC00626A15 /* muber.gif in Resources */ = {isa = PBXBuildFile; fileRef = BFC476B01EAEF4AC00626A15 /* muber.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BF3CB2361EAEEF5D00697E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF3CB2391EAEEF5D00697E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF3CB23B1EAEEF5D00697E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC476AF1EAEF4AC00626A15 /* background.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = background.html; sourceTree = "<group>"; };
+		BFC476B01EAEF4AC00626A15 /* muber.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = muber.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 				BF3CB2361EAEEF5D00697E30 /* Assets.xcassets */,
 				BF3CB2381EAEEF5D00697E30 /* LaunchScreen.storyboard */,
 				BF3CB23B1EAEEF5D00697E30 /* Info.plist */,
+				BFC476AE1EAEF4AC00626A15 /* Resources */,
 				BF3CB22A1EAEEF5D00697E30 /* Supporting Files */,
 			);
 			path = GifBackgroundViewDemo;
@@ -77,6 +82,15 @@
 				BF3CB22B1EAEEF5D00697E30 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFC476AE1EAEF4AC00626A15 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFC476AF1EAEF4AC00626A15 /* background.html */,
+				BFC476B01EAEF4AC00626A15 /* muber.gif */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +124,7 @@
 				TargetAttributes = {
 					BF3CB2261EAEEF5D00697E30 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = GKW57RJB7W;
+						DevelopmentTeam = LFDAS87W6Z;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,7 +154,9 @@
 			files = (
 				BF3CB23A1EAEEF5D00697E30 /* LaunchScreen.storyboard in Resources */,
 				BF3CB2371EAEEF5D00697E30 /* Assets.xcassets in Resources */,
+				BFC476B11EAEF4AC00626A15 /* background.html in Resources */,
 				BF3CB2351EAEEF5D00697E30 /* Main.storyboard in Resources */,
+				BFC476B21EAEF4AC00626A15 /* muber.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +289,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GKW57RJB7W;
+				DEVELOPMENT_TEAM = LFDAS87W6Z;
 				INFOPLIST_FILE = GifBackgroundViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenzhishen.GifBackgroundViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,8 +302,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GKW57RJB7W;
+				DEVELOPMENT_TEAM = LFDAS87W6Z;
 				INFOPLIST_FILE = GifBackgroundViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenzhishen.GifBackgroundViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +330,7 @@
 				BF3CB2401EAEEF5D00697E30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
